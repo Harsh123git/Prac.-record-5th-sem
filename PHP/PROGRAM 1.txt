@@ -1,0 +1,40 @@
+<html>
+<head>
+    <title>PROGRAM 1</title>
+</head>
+<BODY>
+        <h1>Create a PHP page using functions for comparing three integers and print the largest number.</h1>
+        <form method="POST">
+            <input type="number" name="n1" placeholder="First number"><br>
+            <input type="number" name="n2" placeholder="Second number"><br>
+            <input type="number" name="n3" placeholder="Third number"><br>
+            <input type="submit" name="submit" value="FIND largest">
+        </form>
+
+        <?php
+         if(isset($_POST['submit'])){
+             $x=$_POST['n1'];
+             $y=$_POST['n2'];
+             $z=$_POST['n3'];
+
+             largest($x,$y,$z);
+             }
+        
+             function largest($x,$y,$z){
+            if($x>$y && $x>$z)
+               echo "The largest number is $x";
+
+           elseif($y>$x && $y>$z)
+               echo "The largest number is $y";
+
+           elseif($z>$x && $z>$y)
+               echo "The largest number is $z";
+           
+           else
+               echo "The three numbers are equal.";
+           }
+        ?>
+
+
+</BODY>
+</html>

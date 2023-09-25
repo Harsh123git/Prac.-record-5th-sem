@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>PROGRAM 8</title>
+    </head>
+<body>
+    <h1>Write a PHP script that removes the whitespaces from a string.</h1>
+    <form method="POST">
+        <input type="text" name="string" placeholder="Enter a string"><br>
+        <input type="submit" name="submit">
+    </form>
+    <?php
+    if(isset($_POST['string'])){
+        $x=$_POST['string'];
+        echo "BEFORE ".$x;
+       
+        $x=explode(' ',$x);
+          echo "<br>AFTER ";
+        foreach($x as $i){
+            echo $i;
+        }
+
+    }
+    ?>
+    </body>
+    </html>

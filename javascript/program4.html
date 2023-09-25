@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+    var arr=[];
+    function enter(){
+    n=Number(document.getElementById("x").value);
+    
+    if(n!=0){
+        arr.push(n);
+        document.getElementById("show").innerHTML="The entered numbers : "+arr;}
+    else
+        {
+            var sum=0,average;
+            for(var i=0;i<arr.length;i++){
+                sum+=arr[i];
+            }
+            average=sum/arr.length;
+            document.getElementById("result").innerHTML="<hr>The sum is " +sum+ " <br>The average is : "+average+"<hr>";
+                    
+        }
+    }
+
+
+    </script>
+   
+    <title>PROGRAM 4</title>
+</head>
+<body>
+    <h1>Enter a list of positive numbers terminated by Zero. Find the sum and average of these numbers.</h1>
+    <form>
+        <input type="number" id="x">
+        <input type="button" value="Enter numbers" onclick="enter();">
+    </form>
+    <p id=show></p>
+    <p id=result></p>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>PROGRAM 6</title>
+    </head>
+    <body>
+        <h1>. Write a PHP script that checks whether a passed string is palindrome or not?</h1>
+        <form method="POST">
+            <input type="text" name="string" placeholder="Enter a string"><br>
+            <input type="submit" name="submit">
+    </form>
+        <?php
+        if(isset($_POST['submit'])){
+            $x=$_POST['string'];
+            $xy=strtolower($x);
+            $yx=strrev($xy);
+
+            if($xy==$yx)
+                echo "The string is a PALINDROME";
+            else
+                echo "The string is NOT a PALINFROME";
+            
+        }
+        ?>
+    </BODY>
+</HTML>

@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>PROGRAM 4</title>
+    </head>
+
+    <body>
+        <h1>Create a PHP page which accepts string from user. After submission that page displays the reverse of provided string.</h1>
+
+        <form method="POST">
+            <INPUT type="text" name="sting" placeholder="Enter a string"><br>
+            <INPUT type="submit" name="submit">
+        </form>
+
+        <?php
+
+        if(isset($_POST['submit'])){
+            $x=$_POST['sting'];
+
+            $xy=strrev($x);
+            
+                echo "The string after reverse is $xy";
+            }
+        ?>
+    </body>
+</html>

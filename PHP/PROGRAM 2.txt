@@ -1,0 +1,30 @@
+<html>
+<head>
+    <title>
+        PROGRAM 2</title>
+</head>
+
+<body>
+    <h1>Write a function to calculate the factorial of a number (non-negative integer). The function accept the number as an argument.</h1>
+<form method="POST">
+    <input type="number" name="n" placeholder="ENTER A NUMBER"><br>
+    <input type="submit" name="submit" value="FIND FACTORIAL">
+</form>
+    <?php
+    if(isset($_POST['submit'])){
+        $n=$_POST['n'];
+        fact($n);
+    }
+    function fact($n){
+        $fact=1;
+
+        for($i=1;$i<=$n;$i++){
+            $fact*=$i;
+        }
+        echo "The factorial is: $fact";
+    }
+
+    ?>
+
+</body>
+</html>

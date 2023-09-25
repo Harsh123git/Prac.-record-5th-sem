@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script type="text/javascript">
+        function largest() {
+            n1 = Number(document.getElementById("n1").value);
+            n2 = Number(document.getElementById("n2").value);
+            n3 = Number(document.getElementById("n3").value);
+
+            if (n1 > n2 && n1 > n3)
+                {document.getElementById("result").innerHTML = "The largest number is " + n1;}
+            else if (n2 > n1 && n2 > n3)
+                {document.getElementById("result").innerHTML = "The largest number is " + n2;}
+            else if (n3 > n2 && n3 > n1)
+                {document.getElementById("result").innerHTML = "The largest number is " + n3;}
+            else
+                {document.getElementById("result").innerHTML = "The three numbers are equal";}
+        }
+
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM 2</title>
+</head>
+
+<body>
+    <h1>Print the largest of three numbers.</h1>
+    <form>
+        <input type="number" id="n1" placeholder="First number"><br>
+        <input type="number" id="n2" placeholder="Second number"><br>
+        <input type="number" id="n3" placeholder="Third number"><br>
+        <input type="button" value="FIND LARGEST" onclick="largest()">
+    </form>
+    <hr>
+    <p id="result">
+
+    </p>
+    <hr>
+</body>
+
+</html>

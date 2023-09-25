@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+    function print(){
+    var a=5;
+    var res="";
+    for(a=5;a<=15;a++){
+        res=res+(a+": The square is "+(a*a)+" The cube is: "+(a*a*a)+"\n");
+    }
+    window.alert(res);  
+    }
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=>, initial-scale=1.0">
+    <title>PROGRAM 1</title>
+</head>
+<body>
+    <h1>Print a table of numbers from 5 to 15 and their squares and cubes using alert.</h1>
+    <button onclick="print();">CLICK HERE</button>
+</body>
+</html>

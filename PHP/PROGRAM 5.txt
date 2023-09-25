@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <title>PROGRAM 5</title>
+    </head>
+<body>
+    <h1>Write a PHP function that checks if a string is all lower case.</h1>
+
+    <form method=POST>
+        <input type="text" name="string" placeholder="Enter a string"><br>
+        <input type="submit" name="submit">
+    </form>
+    <?php
+
+    if(isset($_POST['submit'])){
+
+        $x=$_POST['string'];
+        lcheck($x);
+    }
+    function lcheck($x){
+        if(strtolower($x)==$x)
+            echo "The string is in LOWER CASE";
+        else 
+            echo "The string is NOT in LOWER CASE";
+        
+    } 
+
+    ?>
+</BODY>
+</HTML>

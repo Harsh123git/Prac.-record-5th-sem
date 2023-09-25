@@ -1,0 +1,33 @@
+<html>
+    <head>
+        <title>PROGRAM 7</title>
+    </head>
+    <body>
+        <h1>WAP to sort an array.</h1>
+        <form method="POST">
+            <input type="number" name="n1" placeholder="First number"><br>
+            <input type="number" name="n2" placeholder="Second number"><br>
+            <input type="number" name="n3" placeholder="Third number"><br>
+            <input type="number" name="n4" placeholder="Fourth number"><br>
+            <input type="number" name="n5" placeholder="Fifth number"><br>
+            <input type="number" name="n6" placeholder="Sixth number"><br>
+            <input type="submit" name="submit">
+        </form>
+        <?php
+        if(isset($_POST['submit'])){
+            $x=array($_POST['n1'],$_POST['n2'],$_POST['n3'],$_POST['n4'],$_POST['n5'],$_POST['n6']);
+            echo "<H4>BEFORE SORTING</H4>";
+            foreach($x as $i){
+                echo "$i";
+            }
+            asort($x);
+            echo "<H4>AFTER SORTING</H4>";
+            foreach($x as $i){
+                echo "$i";
+            }
+        }
+        ?>
+    </body>
+</html>
+
+            

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script type="text/javascript">
+    function fact(){
+        n=Number(document.getElementById("n").value);
+        var fact=1;
+        for(var i=1;i<=n;i++){
+            fact=fact*i;
+        }
+        document.getElementById("result").innerHTML="The factorial of "+n+" is :" +fact;
+    }
+    </script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROGRAM 3</title>
+</head>
+<body>
+    <h1>Find the factorial of a number n.</h1>
+    <form>
+        <input type="number" id="n" placeholder="Enter a number"><br>
+        <input type="button" value="FIND FACTORIAL" onclick="fact()">
+    </form>
+    <hr>
+<p id="result"></p>
+<hr>
+</body>
+</html>
